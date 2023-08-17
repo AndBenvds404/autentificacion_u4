@@ -1,12 +1,12 @@
 package com.example.pw_autorizacion_u4_ab.repository;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
+
 import org.springframework.stereotype.Repository;
 
 import com.example.pw_autorizacion_u4_ab.repository.entidad.Usuario;
-
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
-import jakarta.transaction.Transactional;
 
 @Repository
 @Transactional

@@ -18,7 +18,7 @@ public class TokenControllerResful {
     @Autowired
     private UsuarioServiceImpl usuarioService;
 
-    @GetMapping
+    @GetMapping("/obtener")
     public String obtenerToken(@RequestBody UsuarioTo usuario) {
 
         return "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.vS_i5VRtYot760a9J2HAFP7JyHCk2c31I0E8kjQHctA";
