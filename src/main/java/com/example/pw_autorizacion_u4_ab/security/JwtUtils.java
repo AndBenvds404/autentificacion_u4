@@ -22,7 +22,7 @@ public class JwtUtils {
     @Value("${app.jwt.expiration.ms}")
     private Integer jwtExpiration;
 
-    public String generateJwtToken(Authentication authentication, String nombre) {
+    public String generateJwtToken(String nombre) {
 
         LOG.info("semilla :" + jwtSecreat + " " + "tiempo: " + jwtExpiration);
 

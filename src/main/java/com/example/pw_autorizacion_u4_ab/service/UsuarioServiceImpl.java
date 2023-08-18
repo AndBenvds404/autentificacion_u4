@@ -1,5 +1,7 @@
 package com.example.pw_autorizacion_u4_ab.service;
 
+import static java.util.Collections.emptyList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -8,10 +10,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.example.pw_autorizacion_u4_ab.repository.IUsuarioRepository;
-import com.example.pw_autorizacion_u4_ab.repository.UsuarioRepositoryImpl;
 import com.example.pw_autorizacion_u4_ab.repository.entidad.Usuario;
-import com.example.pw_autorizacion_u4_ab.service.dto.UsuarioTo;
-import static java.util.Collections.emptyList;
 
 @Service
 public class UsuarioServiceImpl implements UserDetailsService {
